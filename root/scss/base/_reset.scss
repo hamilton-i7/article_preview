@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba($background-body, .25);
+    box-sizing: border-box;
+    padding: 8rem 2.5rem 0 2.5rem;
+}
+
+.main-card {
+    border-radius: 2.5rem;
+    box-shadow: 0 1.8rem 2rem rgba($color-primary, .25);
+    overflow: hidden;
+}

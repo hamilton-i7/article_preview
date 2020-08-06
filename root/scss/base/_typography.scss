@@ -1,0 +1,31 @@
+body {
+    color: $color-secondary;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.heading {
+    color: $color-primary;
+    font-weight: 700;
+
+    &-secondary {
+        @extend .heading;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    &-tertiary {
+        @extend .heading;
+        font-size: 1.4rem;
+    }
+}
+
+.subheading-primary {
+    color: rgba($color-secondary, .5);
+}
+
+.paragraph {
+    line-height: 1.6;
+}
