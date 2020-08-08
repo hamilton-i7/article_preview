@@ -19,6 +19,14 @@ body {
     &-tertiary {
         @extend .heading;
         font-size: 1.4rem;
+
+        &--active {
+            @extend .heading;
+            color: rgba($background-main-card, .65);
+            font-size: 1.3rem;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+        }
     }
 }
 

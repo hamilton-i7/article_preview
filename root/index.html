@@ -12,57 +12,51 @@
   
   <title>Frontend Mentor | Article preview component</title>
 
-  <script src="https://kit.fontawesome.com/ef3dd0ebbb.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ef3dd0ebbb.js" crossorigin="anonymous" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-<main class="main-card">
-  <figure class="img-box">
-    <img src="images/drawers.jpg" alt="Drawers" class="img-box__img">
-  </figure>
+  <main class="main-card js--mainCard">
+    <figure class="img-box">
+      <img src="images/drawers.jpg" alt="Drawers" class="img-box__img">
+    </figure>
 
-  <section class="text-box">
-    <h2 class="text-box__heading heading-secondary">
-      Shift the overall look and feel by adding these wonderful 
-      touches to furniture in your home
-    </h2>
+    <section class="text-box">
+      <h2 class="text-box__heading heading-secondary">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h2>
 
-    <p class="text-box__par paragraph">      
-      Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-    </p>
-  </section>
-  <footer class="footer">
-    <div class="footer__profile">
-      <img src="images/avatar-michelle.jpg" alt="User profile picture">
-      <h3 class="heading-tertiary">Michelle Appleton</h3>
-      <h4 class="subheading-primary">28 Jun 2020</h4>
-    </div>
+      <p class="text-box__par paragraph">      
+        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+      </p>
+    </section>
 
-    <div class="footer__share">
-      <i class="fas fa-share"></i>
-    </div>
-  </footer>
+    <footer class="footer js--footer">
+      <div class="footer__profile">
+        <img src="images/avatar-michelle.jpg" alt="User profile picture">
+        <h3 class="heading-tertiary">Michelle Appleton</h3>
+        <h4 class="subheading-primary">28 Jun 2020</h4>
+      </div>
 
-  <template>
-    <footer class="footer-active">
-        <h3 class="heading-tertiary--upper">
-          share
-        </h3>
+      <div class="footer__share js--share">
+        <i class="fas fa-share js--share"></i>
+      </div>
+    </footer>
+  </main>
+
+  <template class="js--footerActiveTemp">
+    <footer class="footer-active js--footerActive">
+        <h3 class="heading-tertiary--active" id="share">share</h3>
 
         <i class="fab fa-facebook-square" id="facebook"></i>
         <i class="fab fa-twitter" id="twitter"></i>
         <i class="fab fa-pinterest" id="pinterest"></i>
-        <i class="fas fa-share" id="arrow"></i>
+
+        <div class="footer-active__share" id="arrow">
+          <i class="fas fa-share"></i>
+        </div>
     </footer>
   </template>
-</main>
 </body>
 </html>
-
-<!-- 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
- -->
