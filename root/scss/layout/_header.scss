@@ -1,9 +1,15 @@
 .img-box {
+    background-image: url(../images/drawers.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 21.5rem;
     overflow: hidden;
     width: 100%;
-    
-    &__img {
-        width: 100%;
+
+    @media only screen and (min-width: 1000px) {
+        background-position: left center;
+        grid-area: img;
+        height: auto;
     }
 }
