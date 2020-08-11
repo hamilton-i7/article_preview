@@ -18,6 +18,10 @@ body {
         @media only screen and (min-width: 700px) {
             font-size: 1.7rem;
         }
+        @media only screen and (min-width: 1400px) {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
     }
 
     &-tertiary {
@@ -30,6 +34,10 @@ body {
             font-size: 1.3rem;
             letter-spacing: .5rem;
             text-transform: uppercase;
+
+            @media only screen and (min-width: 1000px) {
+                font-weight: 500;
+            }
         }
     }
 }

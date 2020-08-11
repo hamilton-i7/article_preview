@@ -16,6 +16,7 @@ body {
 }
 
 .main-card {
+  background-color: #fcfcfc;
   border-radius: 1rem;
   -webkit-box-shadow: 0 1.8rem 2rem rgba(72, 85, 106, 0.25);
           box-shadow: 0 1.8rem 2rem rgba(72, 85, 106, 0.25);
@@ -37,6 +38,7 @@ body {
     -ms-grid-columns: 1fr 1.5fr;
         grid-template-columns: 1fr 1.5fr;
     max-width: 70rem;
+    overflow: unset;
   }
 }
 
@@ -63,15 +65,28 @@ body {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .heading-secondary {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+
 .heading-tertiary {
   font-size: 1.4rem;
 }
 
 .heading-tertiary--active {
-  color: rgba(236, 242, 248, 0.65);
+  color: rgba(252, 252, 252, 0.65);
   font-size: 1.3rem;
   letter-spacing: .5rem;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading-tertiary--active {
+    font-weight: 500;
+  }
 }
 
 .subheading-primary {
@@ -83,7 +98,6 @@ body {
 }
 
 .footer {
-  background-color: #ecf2f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +115,7 @@ body {
     grid-area: footer;
     margin-bottom: 6%;
     padding: 2% 8%;
+    position: relative;
   }
 }
 
@@ -149,38 +164,7 @@ body {
   grid-area: date;
 }
 
-.footer__share, .footer-active__share {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(158, 175, 194, 0.4);
-  border-radius: 50%;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 13%;
-      flex-basis: 13%;
-  height: 3.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 3.5rem;
-  position: relative;
-  width: 100%;
-}
-
-.footer__share i, .footer-active__share i {
-  font-size: 2.2rem;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .footer-active {
-  background-color: #48556a;
   display: -ms-grid;
   display: grid;
   grid-area: footer;
@@ -205,7 +189,6 @@ body {
 }
 
 .footer-active i {
-  color: #ecf2f8;
   font-size: 2.2rem;
 }
 
@@ -231,6 +214,70 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
   grid-area: arrow;
+}
+
+.footer-active, .footer-active-desktop {
+  background-color: #48556a;
+  color: #fcfcfc;
+}
+
+.footer-active-desktop {
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(109, 127, 151, 0.3);
+          box-shadow: 0 0.2rem 1rem rgba(109, 127, 151, 0.3);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  display: -ms-grid;
+  display: grid;
+  grid-area: footer;
+      grid-template-areas: "share fb twitter pinterest";
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 2rem 3.5rem;
+  position: absolute;
+  right: -19%;
+  top: -130%;
+  width: 60%;
+}
+
+.footer-active-desktop i {
+  font-size: 2rem;
+}
+
+.footer__share, .footer-active__share, .footer-active__arrow {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(158, 175, 194, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+  height: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 3.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.footer__share i, .footer-active__share i, .footer-active__arrow i {
+  font-size: 2.2rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer-active__arrow {
+  background-color: #6d7f97;
+  color: #fcfcfc;
 }
 
 .hide {
@@ -259,8 +306,13 @@ body {
 }
 
 .text-box {
-  background-color: #ecf2f8;
   padding: 12% 10.5% 6% 10.5%;
+}
+
+@media only screen and (min-width: 415px) {
+  .text-box {
+    padding: 6% 10.5%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

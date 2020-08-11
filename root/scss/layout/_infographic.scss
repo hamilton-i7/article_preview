@@ -1,7 +1,9 @@
 .text-box {
-    background-color: $background-main-card;
     padding: 12% 10.5% 6% 10.5%;
 
+    @media only screen and (min-width: 415px) {
+        padding: 6% 10.5%;
+    }
     @media only screen and (min-width: 1000px) {
         grid-area: txt;
         padding: 6% 8%;
