@@ -38,7 +38,7 @@ body {
     -ms-grid-columns: 1fr 1.5fr;
         grid-template-columns: 1fr 1.5fr;
     max-width: 70rem;
-    overflow: unset;
+    overflow: visible;
   }
 }
 
@@ -297,6 +297,8 @@ body {
 @media only screen and (min-width: 1000px) {
   .img-box {
     background-position: left center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
