@@ -192,25 +192,25 @@ body {
   font-size: 2.2rem;
 }
 
-.footer-active #facebook {
+.footer-active .facebook {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: fb;
 }
 
-.footer-active #twitter {
+.footer-active .twitter {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: twitter;
 }
 
-.footer-active #pinterest {
+.footer-active .pinterest {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: pinterest;
 }
 
-.footer-active #arrow {
+.footer-active .arrow {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
   grid-area: arrow;
